@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "thenables/timeout-then",
   "dependencies": {
-    "native-or-bluebird": "1"
+    "native-or-bluebird": "1.2.0"
   },
   "devDependencies": {
     "bluebird": "2",
