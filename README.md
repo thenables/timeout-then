@@ -17,6 +17,13 @@ var timeout = require('timeout-then');
 timeout(100).then(function () {
   console.log('blah');
 });
+
+// clear timeout
+var timer = timeout(100);
+timer.then(function () {
+  console.log('blah');
+});
+timer.clear();
 ```
 
 [gitter-image]: https://badges.gitter.im/thenables/timeout-then.png

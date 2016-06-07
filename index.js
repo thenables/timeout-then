@@ -2,7 +2,12 @@
 var Promise = require('native-or-bluebird')
 
 module.exports = function (interval) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, interval || 0)
+  var timer
+  var promise = new Promise(function (resolve) {
+    timer = setTimeout(resolve, interval || 0)
   })
+  promise.clear = function () {
+    return clearTimeout(timer)
+  }
+  return promise
 }
