@@ -14,3 +14,18 @@ it('should wait', function () {
     assert(blah)
   })
 })
+
+it('should clear', function (done) {
+  var blah = true
+
+  var timer = timeout(5)
+  timer.then(function () {
+    blah = false
+  })
+  timer.clear()
+
+  setTimeout(function () {
+    assert(blah)
+    done()
+  }, 100)
+})
