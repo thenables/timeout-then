@@ -1,5 +1,5 @@
 
-var Promise = require('native-or-bluebird')
+var Promise = require('any-promise')
 
 module.exports = function (interval) {
   var timer
