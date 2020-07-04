@@ -6,9 +6,8 @@
   "license": "MIT",
   "repository": "thenables/timeout-then",
   "devDependencies": {
-    "bluebird": "^3.4.0",
-    "istanbul": "^0.4.3",
-    "mocha": "^2.5.3"
+    "istanbul": "^0.4.5",
+    "mocha": "^8.0.1"
   },
   "scripts": {
     "test": "mocha --reporter spec",

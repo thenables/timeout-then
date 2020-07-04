@@ -1,10 +1,10 @@
 
-var assert = require('assert')
+const assert = require('assert')
 
-var timeout = require('..')
+const timeout = require('..')
 
 it('should wait', function () {
-  var blah = false
+  let blah = false
 
   setTimeout(function () {
     blah = true
@@ -16,9 +16,9 @@ it('should wait', function () {
 })
 
 it('should clear', function (done) {
-  var blah = true
+  let blah = true
 
-  var timer = timeout(5)
+  let timer = timeout(5)
   timer.then(function () {
     blah = false
   })
