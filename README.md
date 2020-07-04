@@ -11,14 +11,14 @@
 `setTimeout` as a promise.
 
 ```js
-var timeout = require('timeout-then');
+const timeout = require('timeout-then');
 
 timeout(100).then(function () {
   console.log('blah');
 });
 
 // clear timeout
-var timer = timeout(100);
+let timer = timeout(100);
 timer.then(function () {
   console.log('blah');
 });
