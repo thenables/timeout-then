@@ -7,7 +7,6 @@
 [![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
-[![Gittip][gittip-image]][gittip-url]
 
 `setTimeout` as a promise.
 
@@ -42,5 +41,3 @@ timer.clear();
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/timeout-then.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/timeout-then
-[gittip-image]: https://img.shields.io/gratipay/jonathanong.svg?style=flat-square
-[gittip-url]: https://gratipay.com/jonathanong/
